@@ -1,17 +1,18 @@
-%define		plugin	menu
+%define		plugin	menus
 Summary:	WordPressMU plugin to Enable or disable WP Backend Menus
 Name:		wpmu-plugin-%{plugin}
 Version:	2.5.7
-Release:	0.1
+Release:	0.2
 License:	GPL v2+
 Group:		Applications/Publishing
 Source0:	http://wpmudev.org/download/1477487882_ds_toggle_admin_menus.php
-# Source0-md5:	97576b10862c3f2adea8c97b19527467
+# Source0-md5:	54bd7c38e1848ae038a3341b4fa2c64c
 URL:		http://wpmudev.org/project/Menus
 BuildRequires:	rpmbuild(macros) >= 1.553
 BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
 Requires:	wpmu >= 2.7
+Obsoletes:	wpmu-plugin-menu
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
